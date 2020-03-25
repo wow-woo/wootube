@@ -1,0 +1,156 @@
+.dropzone {
+  position: relative;
+  height: 200px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.dropzone:hover > p {
+  display: block;
+  opacity: 1;
+}
+
+.dropzone:hover > .plus {
+  display: none;
+  opacity: 0;
+}
+
+.dropzone p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+}
+
+.dropzone .plus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.thumbnail-container span {
+  display: inline-block;
+  background-color: #ce2222;
+  padding: 9px 10px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.thumbnail-container span:hover {
+  background-color: #b61818;
+  color: #fff;
+}
+
+.thumbnail-container .video-thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thumbnail-container img {
+  display: block;
+  margin: 3% 0;
+}
+
+.img-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2;
+  border: 1px solid #eaeaea;
+  margin-top: 1%;
+}
+
+.img-thumb > div {
+  padding: 1% 2%;
+}
+
+.img-thumb img {
+  display: block;
+  max-width: 160px;
+}
+
+.field-group {
+  margin-top: 10%;
+}
+
+/* progress bar */
+.progress-container {
+  position: relative;
+  height: 5px;
+}
+
+.progress-container .progress-bar {
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  height: 5px;
+  position: absolute;
+  border: 1px solid grey;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.progress-container .progress-number {
+  background-color: transparent;
+  height: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
+
+.app {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: red;
+  height: 5px;
+  margin-top: -12px;
+}
+/*# sourceMappingURL=index.css.map */

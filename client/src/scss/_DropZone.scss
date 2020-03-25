@@ -1,0 +1,74 @@
+// .dropzone-container {
+// }
+.dropzone {
+  position: relative;
+  height: 200px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+
+  &:hover {
+    & > p {
+      display: block;
+      opacity: 1;
+    }
+    & > .plus {
+      display: none;
+      opacity: 0;
+    }
+  }
+  p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+  }
+
+  .plus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.thumbnail-container {
+  span {
+    display: inline-block;
+    background-color: rgb(206, 34, 34);
+    padding: 9px 10px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(182, 24, 24);
+      color: #fff;
+    }
+  }
+
+  .video-thumbnail {
+    display: flex;
+  }
+  img {
+    display: block;
+    margin: 3% 0;
+  }
+}
+
+.img-thumb {
+  display: flex;
+  border-radius: 2;
+  border: 1px solid #eaeaea;
+  margin-top: 1%;
+
+  & > div {
+    padding: 1% 2%;
+  }
+
+  & img {
+    display: block;
+    max-width: 160px;
+  }
+}
